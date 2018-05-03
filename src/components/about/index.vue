@@ -7,7 +7,7 @@
                     <Clock></Clock>
                 </div>
                 <div class="avatar">
-                    <img src="../../assets/img/avatar.png">
+                    <img src="../../assets/img/avatar.jpg">
                 </div>
                 <div class="describe">
                     <div class="name color-black font-20">
@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="footer">
-                    <a href="https://github.com/bestsamcn" class="icon-github"></a>
+                    <a id="github-link" href="https://github.com/bestsamcn" class="icon-github"></a>
                 </div>
             </div>
         </div>

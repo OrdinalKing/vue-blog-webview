@@ -5,7 +5,6 @@
         <div class="main">
             <Articlelist @onLoadMore="getList(false)" :article-list="articleList" :is-more="isMore"></Articlelist>
         </div>
-        <Footerbar class="margin-top-20"></Footerbar>
     </div>
 </template>
 <script>
@@ -14,7 +13,6 @@
     import $$ from '@/utils/index.js';
     import { mapState, mapActions } from 'vuex';
     import Backtop from '@/components/common/backTop.vue';
-    import Footerbar from '@/components/common/footer.vue';
     export default{
         name:'home',
         data:()=>{
@@ -29,7 +27,6 @@
 		},
         components:{
             Articlelist,
-            Footerbar:Footerbar,
             Backtop:Backtop
         },
         computed:{
