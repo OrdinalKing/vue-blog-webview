@@ -23,14 +23,12 @@
                 </div>
             </div>
         </div>
-        <Footerbar class="margin-top-20"></Footerbar>
     </div>
 </template>
 <script>
     import { mapActions, mapState } from 'vuex';
     import Articlelist from '../article/articleList.vue';
     import Category from './Category.vue';
-    import Footerbar from '@/components/common/footer.vue';
     import Articlerank from './articleRank.vue';
     import Tags from './tags.vue';
     import Backtop from '@/components/common/backTop.vue';
@@ -80,7 +78,6 @@
             Category,
             Articlerank,
             Tags,
-            Footerbar,
             Hot,
             Backtop
         },

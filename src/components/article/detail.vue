@@ -31,7 +31,6 @@
             <Comment class="margin-top-30" :article="$route.params.id">
             </Comment>
         </div>
-        <Footerbar class="margin-top-20"></Footerbar>
     </div>
 </template>
 <script>
@@ -42,7 +41,6 @@
     import '@/assets/css/common/github-markdown.css';
     import '@/assets/css/common/atom-one-dark.css';
     import $$ from '@/utils/index.js';
-    import Footerbar from '@/components/common/footer.vue';
     import Backtop from '@/components/common/backTop.vue';
     import { mapActions, mapState } from 'vuex';
     export default{
@@ -61,7 +59,6 @@
         components:{
             Comment,
             Tags,
-            Footerbar,
             Backtop
         },
         computed:{

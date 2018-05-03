@@ -53,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <p class="text-center margin-top-10 color-gray" v-if="!isMore">没有更多了...</p>
+        <p class="text-center margin-top-10 color-gray" style="margin:40px auto" v-if="!isMore">没有更多了...</p>
         <a href="javascript:;" v-if="isMore" @click="getList(false)" class="more-btn md-hide">More</a>
     </div>
 </template>

@@ -30,34 +30,15 @@ store.state.common.clientHeight=clientHeight
 store.dispatch('setMobile', Utils.isMobile());
 //全局数据初始化
 store.dispatch('setToken', localStorage['__bestToken__'] && JSON.parse(localStorage['__bestToken__']).token);
-store.dispatch('getTagList');
-store.dispatch('getCategoryList');
-store.dispatch('getHotWordList');
+// store.dispatch('getTagList');
+// store.dispatch('getCategoryList');
+// store.dispatch('getHotWordList');
 //title
 // router.afterEach((to, from, next)=>{
 //     document.title = to.meta.title;
 //     next();
 // });
-//路由权限
-router.beforeEach((to, from, next) => {
-    if (to.matched.some(record => record.meta.auth)) {
-        if (!store.state.common.isLogin) {
-            return next({
-                path: '/admin/signin',
-                query: {
-                    redirect: to.fullPath
-                }
-            });
-        }
-    }else{
-        if (to.path.indexOf('signin') !== -1 && store.state.common.isLogin) {
-            return next({
-                path: '/admin'
-            });
-        }
-    }
-    next();
-});
+
 
 
 new Vue({

@@ -18,7 +18,6 @@
             </div>
             <router-link :to="{name:'Article'}"></router-link>
         </div>
-        <Footerbar class="margin-top-20"></Footerbar>
     </div>
 </template>
 <script>
@@ -27,7 +26,6 @@
     import { mapState } from 'vuex';
     import Backtop from '@/components/common/backTop.vue';
     import * as API from '@/api/index.js';
-    import Footerbar from '@/components/common/footer.vue';
     export default{
         name:'search',
         data(){
@@ -47,7 +45,6 @@
         components:{
             Articlelist,
             Tags,
-            Footerbar,
             Backtop
         },
         computed:{

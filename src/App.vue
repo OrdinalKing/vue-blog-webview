@@ -5,17 +5,9 @@
         <transition enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
         <Toast :msg="toastMsg" v-show="iShowToast"></Toast>
         </transition>
-        
-        <Navheader v-show="routerName && routerName.indexOf('Admin') == -1" @logoClick="onLogoClick($event)"></Navheader>
-        <transition enter-active-class="animated bounceInLeft" leave-active-class="animated bounceOutLeft">
-            <Menulist v-show="iShowMenu && isResizeToMobile"></Menulist>
-        </transition>
-        <!-- <transition :name="$router.app.pageTransition"> -->
-        <!-- <transition :name="'fade'"> -->
-            <keep-alive>
-                <router-view class="router-view"></router-view>
-            </keep-alive>
-        <!-- </transition> -->
+        <keep-alive>
+            <router-view class="router-view"></router-view>
+        </keep-alive>
     </div>
 </template>
 
@@ -24,9 +16,6 @@ import './assets/libs/animate.css/animate.min.css';
 import './assets/libs/Font-Awesome-3.2.1/css/font-awesome.min.css';
 import { mapState, mapActions } from 'vuex';
 import Loading from './components/common/loading.vue';
-import Navheader from './components/common/header.vue';
-import Footerbar from '@/components/common/footer.vue';
-import Menulist from './components/common/menu.vue';
 import Toast from './components/common/toast.vue';
 
 
@@ -39,10 +28,7 @@ export default {
     },
     components:{
         Loading,
-        Menulist,
-        Navheader,
         Toast,
-        Footerbar
     },
     computed:{
         ...mapState({
