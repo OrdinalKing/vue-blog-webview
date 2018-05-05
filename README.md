@@ -6,7 +6,7 @@
 
 
 ## 简介
-vue-Blog-webview 是一个用于React-Native中Webview组件的项目，另有[React版本](https://github.com/bestsamcn/react-blog)和[Angular版本](https://github.com/bestsamcn/angular-blog)。
+vue-blog-webview 是一个用于React-Native中Webview组件的项目，另有[React版本](https://github.com/bestsamcn/react-blog)和[Angular版本](https://github.com/bestsamcn/angular-blog)。
 - 前端使用了vue2全家桶完成，包括了``vue + vue-router + axios + vuex + element-ui``;
 - 后端接口利用 ``express + mongodb + redis`` 开发，后端地址[请点我](https://github.com/bestsamcn/node-blog)
 
