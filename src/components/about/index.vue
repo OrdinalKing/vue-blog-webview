@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="footer">
-                    <a id="github-link" href="https://github.com/bestsamcn" class="icon-github"></a>
+                    <a url="https://github.com/bestsamcn" id="github-link" href="javascript:;" class="icon-github"></a>
                 </div>
             </div>
         </div>
